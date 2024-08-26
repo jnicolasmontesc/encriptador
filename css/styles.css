@@ -1,0 +1,245 @@
+:root {
+    --color-1: #000000;
+    --color-2: #000000;
+    --color-3: #000000;
+    --color-4: #000000;
+    --color-5: #000000;
+    --color-6: #90bdd3;
+    --color-7: #71a5be;
+    --color-8: #000000;
+    --color-9: #000000;
+    --color-10: #000000;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(../images/fondo1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    margin-bottom: 5rem;
+    width: 60%;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 7%;
+}
+
+.camp_encrip {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70dvh;
+}
+
+.txt_area {
+    width: 100%;
+    max-width: 577px;
+    height: 64dvh;
+    color: var(--color-8);
+    border: 1px solid var(--color-5);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    box-shadow: 1px 7px 30px -8px var(--color-4);
+    border-radius: 18px;
+    outline: none;
+    font-family: "Nunito", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    margin-bottom: 3rem;
+    overflow: auto;
+}
+
+::placeholder {
+    color: var(--color-1);
+}
+
+.aviso {
+    color: var(--color-8);
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 1.5rem;
+    font-family: "Nunito", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+}
+
+.alerta {
+    width: 20px;
+    height: 20px;
+}
+
+.rob_inicio {
+    border-radius: 5%;
+}
+
+.camp_btn {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.prop_btn {
+    background: var(--color-7);
+    color: var(--color-10);
+    padding: 1rem 2rem;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid var(--color-7);
+    box-shadow: 1px 7px 30px -8px var(--color-7);
+}
+
+.prop_btn:hover {
+    background-color: var(--color-6);
+}
+
+.prop_btn--secundary {
+    background: var(--color-7);
+    color: var(--color-10);
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border: 2px solid var(--color-7);
+    box-shadow: 1px 7px 30px -8px var(--color-7);
+}
+
+.titulo_result { 
+    color: var(--color-8);
+    font-family: "Nunito", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 21px;
+}
+
+.txt_result { 
+    color: var(--color-8);
+    font-family: "Nunito", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.copy_btn { 
+    color: var(--color-10);
+    font-family: "Nunito", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 21px;
+}
+
+.prop_btn{ 
+    font-family: "Nunito", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 21px;
+}
+
+.camp_result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    height: 77dvh;
+    border-radius: 32px;
+    max-width: 40rem;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    text-align: center;
+    font-size: 1.5rem;
+    border: 1px solid var(--color-5);
+    box-sizing: border-box;
+    box-shadow: 1px 12px 32px -8px var(--color-4);
+}
+
+.hidden {
+    display: none;
+}
+
+.footer {
+    text-align: center;
+    color: var(--color-8);
+    padding: 1rem;
+    font-weight: 600;
+    margin-top: 5rem;
+    font-family: "Nunito", serif;
+    font-style: normal;
+    font-size: 30px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+
+.git_linkedin{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .camp_btn {
+        justify-content: center;
+    }
+
+    .txt_area {
+        margin: auto;
+        margin-block-end: 2rem;
+    }
+
+    .camp_result {
+        height: auto;
+        max-width: 624px;
+        margin-top: 2rem;
+        min-height: 186px;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    .carga {
+        margin-top: 1rem;
+    }
+
+    header img {
+        width: 73px;
+    }
+
+    .carga_robot {
+        display: none;
+    }
+}
+
+@keyframes l9 {
+    to {
+        transform: perspective(300px) translateZ(100px);
+        opacity: 0
+    }
+}

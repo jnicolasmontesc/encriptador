@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador Alura + Oracle</title>
+        <link rel="icon" type="image/x-icon" href="./images/icono_encript.jpg"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <header>
+            <img src="./images/logo.png" >
+        </header>
+        <main>
+            <form class="camp_encrip">
+                <textarea class="txt_area" name="mensaje" id="" cols="30" rows="10" placeholder="Ingrese el texto que desea encriptar o desencriptar"></textarea>
+                <div class="btn_box">
+                    <div class="aviso"><img  class="alerta" src="./images/marca.png" alt="alert icon"><span>Solo letras minúsculas y no se perminten acentos, ni caracteres especiales</span>
+                    </div>
+                </div>
+                <div class="camp_btn">
+                    <input class="prop_btn" type="submit" value="Encriptar">
+                    <input class="prop_btn prop_btn--secundary" type="submit" value="Desencriptar">
+                </div>
+            </form>
+            <aside class="camp_result">
+                <div class="carga">
+                    <img class="rob_inicio" src="./images/robot_inicio.png"/>
+                </div>
+                <div class="carga_robot hidden">
+                    <img class="rob_carga" src="./images/carga_robot.gif"/>
+                </div>
+                <div class="camp_result1">
+                    <h3 class="titulo_result">Ningún texto fue encontrado</h3>
+                    <p class="txt_result"></p>
+                    <button class="copy_btn prop_btn prop_btn--secundary hidden">Copiar</button>
+                </div>
+            </aside>
+        </main>
+        <footer class="footer">
+            <p>© 2024<br>Todos los derechos reservados<br>Juan Nicolás Montes Cetina</p>
+            <div class="links_footer">
+                <a class="links" target="_blank" href="https://github.com/jnicolasmontesc"> <img class="git_linkedin" src="./images/github.png"></a>
+                <a class="links" target="_blank" href="https://www.linkedin.com/in/juan-nicol%C3%A1s-montes-cetina-883314226/"> <img class="git_linkedin" src="./images/linkedin.png"></a>
+            </div>
+        </footer>
+        <script src="./encriptador.js"></script>
+    </body>
+</html>
